@@ -1,8 +1,8 @@
 /*卡片栏透明*/
 :root {
     /* --card-bg: #fff; */
-    --card-bg: #fbfbffc5;
-  }
+    --card-bg: rgba(255, 255, 255, 0.61);
+  }   
   
   [data-theme="dark"] {
     /* --card-bg: #121212; */
@@ -15,4 +15,6 @@
     /* --hr-border: rgba(255,255,255,0.4); */
     --font-color: rgb(255, 255, 255);
     --hr-border: rgb(161, 83, 255);
+    --card-filter:(2px)
   }
+   

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恭喜你发现宝藏！</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+.center {
+            text-align: center;
+        }
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+#pic{
+    border-radius: 25px;
+    border:2px solid #a1a1a1;
+	padding:10px 40px; 
+	background:#dddddd;
+	width: 600px;
+	border-radius:25px;
+}
+
+div.card {
+  border-radius: 25px;
+  margin: auto;
+  width: 700px;
+  box-shadow: 0 4px 8px 0 rgba(253, 252, 252, 0.2), 0 6px 20px 0 rgba(253, 253, 253, 0.19);
+  text-align: center;
+  
+}
+
+div.header {
+    border-radius: 25px 25px 0 0;
+    margin: auto;
+    background-color: #0f6cf8be;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+   
+}
+
+div.container {
+    margin: auto;
+    padding: 10px;
+}
+        </style>
+</head>
+<body>
+    <!-- <section>
+        <img id="bg" src="../assets/bg.jpg" alt="">
+        <img id="moon" alt="" src="../assets/moon.png" >
+        <img id="mountain" src="../assets/mountain.png" alt="">
+        <img id="road" src="../assets/road.png" alt="">
+        <h2 id="text">Moon Light</h2>
+    </section> -->
+        
+        <section>
+        <img src="../images/bg.jpg" alt="" id="bg">
+        <img src="../images/moon.png" alt="" id="moon">
+        <img src="../images/mountain.png" alt="" id="mountain">
+        <img src="../images/road.png" alt="" id="road" >
+        <h2 id="text">欢迎来到凝星工作室!</h2>
+    </section> 
+
+    <script>
+        let bg = document.getElementById('bg');
+        let moon = document.getElementById('moon');
+        let mountain = document.getElementById('mountain');
+        let road = document.getElementById('road');
+        let text = document.getElementById('text');
+        window.addEventListener('scroll', function () {
+            // window.scrollY(可读，双精度类型)：返回当前从原点垂直滚动文档的像素数
+            let value = window.scrollY;
+
+            /*
+                * top = value(scrollY)使背景图像距离原点的距离等于文档已经滚动的像素距离，
+                    这样能够使背景图像上边缘一直贴着视口上边界。
+                * 由于其余图像设置了绝对定位，因此后面的图像会将前面的背景图像覆盖(后面图像的z-index更大？)。
+                * 因为section设置了overflow: hidden，所以背景图像向下滚动时，穿出section
+                    的部分会被隐藏。
+                * 0.5可以不设置，不影响效果。可能是为了四舍五入？
+            */
+            bg.style.top = value + 0.5 + 'px';
+
+            /*
+                随着页面向下滚动，月亮往左上方移动
+                * 月亮图像会默认向上方移动，所以设置它的左移动就行
+                * 因为section设置了overflow: hidden，所以moon图像向左移动时，穿出section
+                    的部分会被隐藏。
+                * 搞不明白为什么要+0.5
+            */
+            moon.style.left = -value + 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script> 
+    <div class="card">
+        <div class="header">
+            <h2>👑创意来源🎨</h2>
+            <font color=#FFFFFF  size=5 face="" strong="on">
+            
+    </div>
+    <div class="container">
+        <br>
+        <p>好了轮到我yu寜来搞一下这个b了[bushi]
+        <br>
+        <br>
+        故事是这样的：
+        <br>
+        <br>
+        在一个月黑风高的夜晚....
+        <br>
+        <br>
+        </p>
+    </div>
+    </div>
+         <br>
+         <div class="center">
+            <img src="../images/p1.jpg" id="pic" >
+            <img src="../images/p2.jpg" id="pic">
+            <img src="../images/p3.jpg" id="pic">
+            <img src="../images/p4.jpg" id="pic">
+            <img src="../images/p5.jpg" id="pic">
+            <img src="../images/p6.jpg" id="pic">
+            <img src="../images/p7.jpg" id="pic">
+            <img src="../images/p8.jpg" id="pic">
+        <br>
+        <div class="card">
+            <br>
+           <p1> 好了不得不说想到一块去了，咱们说干就干</p1>
+           <br>
+           <br>
+        </div>
+        </div>
+
+        <br>
+        <br>
+        <div class="card">
+            <div class="header"> 
+        <h2>🙆‍♂️我们是谁🙆‍♀️</h2>
+        </div>
+        <br>
+        <div class="container">
+             <p1>         
+           这个工作室是由两个在昌邑一中的高中狗wangyuning和xingmouren建立的.
+            <br>
+            <br>
+            要不是有网课,要不是这个货让我搞blog,(好吧其实是我自己想搞的...),大家可能就见不到这个工作室了.
+            <br>
+            <br> 
+            怎么说还得是俺xing哥,要没有他我也混不到今天,托管,维护都是他搞的(谁让这货有钱...)
+        <br>
+        <br>
+        </p1>
+        </div>
+        </div>
+        <br>
+        <br>
+    
+        <div class="card">
+            <div class="header">
+        <h2>🧬名称创意🗿</h2>
+    </div>
+        <br>
+        <div class="container">
+            <p1>因为我俩名字最后一个自分别是"宁"和"兴"，但是叫"宁兴"实在太拉了，所以搞了个同音词"凝星"，听起来高端一点。
+        <br>
+        <br>
+        我们的logo还在设计中，具体方案就是要有W,N,X,M,A,H的元素N,X就是凝星，W因为我们都姓王，M,A是我博客名的前两个字母，H,A那就是他的了。</p1>
+    <br>
+    <br>
+    </div>
+</div>
+        <br>
+        <br>
+    
+    
+        <div class="card">
+            <div class="header">
+        <h2>🥇我们的目标🏆</h2>
+    </div>
+           <br>
+        <div class="container">
+        <p1>
+        现在我们的工作室正在开发中，急需大佬的支持和帮助。
+        <br>
+        <br>
+    
+        主要还是想创造一个良好的代码学习、交流的氛围，让更多像我一样的小白能够轻松入坑，也能让大佬们展示更多的才能，提出更多的创意，从而不仅能让我们受益，也能让更多互联网公民受益。
+        </p1>  
+        <br>
+        <br>
+    </div>
+</div>
+        <br>
+        <br>
+     
+        
+        <div class="card">
+            <div class="header">
+        <h2>🎆加入我们🎇</h2></div>
+        <br>
+        <div class="container">
+        <p1>好了，话不多说了，加入我们一起折腾吧！！！
+            <br>
+            <br>
+        这是我们的QQ
+        <br>
+        <br>
+        <font color=#1E90FF size=5 face="">
+        wangyuning：350860521  
+        <br>
+        <br>
+        xingmouren：263852678
+        </font>
+        </p1>
+        <br>
+        <br>
+        </div>
+        </div>
+        <br>
+        <br>
+        </div>
+          </div>  
+        </body>
+        </html>

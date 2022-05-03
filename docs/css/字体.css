@@ -1,10 +1,10 @@
 @font-face{
-	font-family: 'ZhuZi';
-	src: url('https://cdn.jsdelivr.net/gh/cifan-yk/cifan-yk.github.io/font/ZhuZiAWan5.woff2');
+	font-family: '站酷庆科黄油体';
+	src: url('./font/站酷庆科黄油体.ttf') format("truetype");
 	font-display: swap;
 }
 
 body{
-	font-family: 'ZhuZi', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', 'sans-serif';
+	font-family: '站酷庆科黄油体', BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', 'sans-serif';
 	font-size: 16px;
 }
